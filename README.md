@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+[코딩셰프 플러터 강좌 순한맛](https://youtu.be/AdYRASHRKwE)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
