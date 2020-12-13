@@ -21,16 +21,21 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('First app'),
+        centerTitle: true,
+        backgroundColor: Colors.red,
+        elevation: 0.0,
       ),
-      body: Center(
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('Hello'),
             Text('Hello'),
-            Text('Hello')
+            Text('Hello'),
           ],
-        )
-      )
+          ),
+      ),
     );
   }
 }
