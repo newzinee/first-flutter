@@ -25,16 +25,15 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Colors.red,
         elevation: 0.0,
       ),
-      body: Padding(
-        padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
+      body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Hello'),
-            Text('Hello'),
-            Text('Hello'),
-          ],
-          ),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text('Hello'),
+              Text('Hello'),
+              Text('Hello'),
+            ],
+            ),
       ),
     );
   }
