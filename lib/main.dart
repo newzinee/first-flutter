@@ -7,33 +7,46 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'First app',
-      theme: ThemeData(
-        primarySwatch: Colors.blue
-      ),
-      home: MyHomePage(),
+      home: Grade(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class Grade extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber[800],
       appBar: AppBar(
         title: Text('First app'),
+        backgroundColor: Colors.amber[700],
         centerTitle: true,
-        backgroundColor: Colors.red,
         elevation: 0.0,
       ),
-      body: Center(
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text('Hello'),
-              Text('Hello'),
-              Text('Hello'),
-            ],
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text('NAME',
+            style: TextStyle(
+              color: Colors.white,
+              letterSpacing: 2.0
             ),
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text('BBANTO',
+            style: TextStyle(
+              color: Colors.white,
+              letterSpacing: 2.0,
+              fontSize: 28.0,
+              fontWeight: FontWeight.bold
+            ),
+            ),
+          ],
+        )
       ),
     );
   }
